@@ -1,0 +1,11 @@
+{
+  "name": "viewer-workspace",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "new_viewer"
+  ],
+  "allowScripts": {
+    "webgpu@0.4.0": true
+  }
+}

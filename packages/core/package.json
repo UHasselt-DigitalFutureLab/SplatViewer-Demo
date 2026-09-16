@@ -1,0 +1,14 @@
+{
+  "name": "@splatting/core",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "dependencies": {
+    "playcanvas": "^2.21.4",
+    "@playcanvas/splat-transform": "^3.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

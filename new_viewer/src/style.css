@@ -1,0 +1,192 @@
+/* --- DESKTOP DEFAULTS --- */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#ui-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    pointer-events: none;
+}
+
+#top-right-logo-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    z-index: 101;
+    pointer-events: none;
+    align-items: center;
+}
+
+#coordinate-compass {
+    position: fixed;
+    top: 88px;
+    right: 24px;
+    z-index: 101;
+    width: 110px;
+    height: 110px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 4px;
+    background: rgba(18, 24, 31, 0.78);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+}
+
+.coordinate-compass-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.styled-select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    pointer-events: auto;
+    min-width: 200px;
+}
+
+/* Display mode navigation */
+#mode-menu {
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 200;
+    pointer-events: none;
+}
+
+#mode-menu-button {
+    display: grid;
+    width: 46px;
+    height: 46px;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    padding: 0;
+    background: rgba(18, 24, 31, 0.88);
+    color: #fff;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    pointer-events: auto;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.28);
+}
+
+#mode-menu-button:hover,
+#mode-menu-button:focus-visible {
+    background: #ffcccc;
+    color: #111;
+    outline: none;
+}
+
+/* --- MOBILE OVERRIDES --- */
+@media (max-width: 768px) {
+    #ui-container, 
+    #top-right-logo-container { 
+        display: none !important; 
+    }
+
+    #coordinate-compass {
+        top: 16px;
+        right: 16px;
+        width: 84px;
+        height: 84px;
+    }
+
+    #mode-menu {
+        right: 16px;
+        bottom: 16px;
+    }
+
+}
+
+/* Scene Selection Page */
+.scene-selection-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.scene-selection-container h1 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.scene-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.scene-button {
+    padding: 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.scene-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+.scene-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    background-color: #eee;
+}
+
+.scene-label {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
