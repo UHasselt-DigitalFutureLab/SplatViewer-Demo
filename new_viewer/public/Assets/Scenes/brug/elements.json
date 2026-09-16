@@ -1,0 +1,33 @@
+{
+  "logos": [],
+  "camera": {
+    "position": [13.94, -0.06, -31.9],
+    "lookAt": [7.79, 0.44, -24.03]
+  },
+  "ui": {
+    "mobileMenu": {
+      "visibleInModes": ["normal", "advanced", "debug"]
+    },
+    "debugPanel": {
+      "visibleInModes": ["debug"]
+    },
+    "compass": {
+      "visibleInModes": ["advanced", "debug"]
+    },
+    "lodSelect": {
+      "visibleInModes": ["advanced", "debug"]
+    },
+    "renderSelect": {
+      "visibleInModes": ["advanced", "debug"]
+    },
+    "logos": {
+      "visibleInModes": ["normal", "advanced", "debug"]
+    }
+  },
+  "groups": {
+    "main": {
+      "elements": ["brug_main"],
+      "enabled": true
+    }
+  }
+}

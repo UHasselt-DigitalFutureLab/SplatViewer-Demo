@@ -1,0 +1,28 @@
+{
+  "logos": [
+    {
+      "image": "Assets/Scenes/Parallax GebouwH/logos/digital_futurlab_con.jpg",
+      "link": "https://www.uhasselt.be/en/instituten-en/digitalfuturelab",
+      "alt": "Digital Future Lab"
+    },
+    {
+      "image": "Assets/Scenes/Parallax GebouwH/logos/PXL.png",
+      "link": "https://pxl-research.be/",
+      "alt": "PXL"
+    },
+    {
+      "image": "Assets/Scenes/Parallax GebouwH/logos/vlaio.svg",
+      "link": "https://www.vlaio.be/nl",
+      "alt": "VLAIO"
+    }
+  ],
+  "camera": {
+    "position": [-3.8, 5.32, -9.03],
+    "lookAt": [-2.19, 4.11, 0.77]
+  },
+  "flythrough": [],
+  "flythroughSpeed": 10,
+  "ui": {
+    "logos": { "visibleInModes": ["normal", "advanced", "debug"] }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "logos": [],
+  "camera": {
+    "position": [
+      0,
+      2,
+      3.76
+    ],
+    "lookAt": [
+      0,
+      1.5,
+      -5.32
+    ]
+  },
+  "ui": {
+    "mobileMenu": {
+      "visibleInModes": [
+        "normal",
+        "advanced",
+        "debug"
+      ]
+    },
+    "debugPanel": {
+      "visibleInModes": [
+        "debug"
+      ]
+    },
+    "compass": {
+      "visibleInModes": [
+        "advanced",
+        "debug"
+      ]
+    },
+    "lodSelect": {
+      "visibleInModes": [
+        "advanced",
+        "debug"
+      ]
+    },
+    "renderSelect": {
+      "visibleInModes": [
+        "advanced",
+        "debug"
+      ]
+    },
+    "logos": {
+      "visibleInModes": [
+        "normal",
+        "advanced",
+        "debug"
+      ]
+    }
+  },
+  "groups": {
+    "main": {
+      "elements": [
+        "wandelpad_main"
+      ],
+      "enabled": true
+    }
+  }
+}

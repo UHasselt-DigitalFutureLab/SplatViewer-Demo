@@ -1,0 +1,28 @@
+{
+  "name": "dfl_inkomhal",
+  "splats": [
+    {
+      "name": "dfl_inkomhal_main",
+      "path": "../../Splats/DFLInkomhal/lod-meta.json",
+      "position": [0, 0, 0],
+      "rotation": [90, 0, 180],
+      "scale": [1, 1, 1]
+    }
+  ],
+  "models": [],
+  "viewpoints": [],
+  "portals": [
+    {
+      "name": "brug",
+      "image": "Assets/Icons/door.png",
+      "position": [1.31, -4.31, -6.77],
+      "scale": [1, 1, 1],
+      "targetScene": "brug",
+      "targetCameraPosition": [0.62, -0.78, 1.13],
+      "targetCameraLookAt": [-1.58, -0.9, -8.62],
+      "minScale": 0.05,
+      "maxScale": 2
+    }
+  ],
+  "labels": []
+}

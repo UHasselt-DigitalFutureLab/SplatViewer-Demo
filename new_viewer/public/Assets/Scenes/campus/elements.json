@@ -1,0 +1,50 @@
+{
+  "logos": [
+    {
+      "image": "Assets/Logo/POMLimburg.png",
+      "link": "https://pomlimburg.be/",
+      "alt": "POM Limburg"
+    },
+    {
+      "image": "Assets/Logo/PXL.png",
+      "link": "https://www.pxl.be/",
+      "alt": "PXL University College"
+    },
+    {
+      "image": "Assets/Logo/digital_futurlab_con.jpg",
+      "link": "https://www.uhasselt.be/en/instituten-en/digitalfuturelab",
+      "alt": "Digital Future Lab"
+    }
+  ],
+  "camera": {
+    "position": [0, 2, 3.76],
+    "lookAt": [0, 1.5, -5.32],
+    "moveSpeed": 50
+  },
+  "ui": {
+    "mobileMenu": {
+      "visibleInModes": ["normal", "advanced", "debug"]
+    },
+    "debugPanel": {
+      "visibleInModes": ["debug"]
+    },
+    "compass": {
+      "visibleInModes": ["advanced", "debug"]
+    },
+    "lodSelect": {
+      "visibleInModes": ["advanced", "debug"]
+    },
+    "renderSelect": {
+      "visibleInModes": ["advanced", "debug"]
+    },
+    "logos": {
+      "visibleInModes": ["normal", "advanced", "debug"]
+    }
+  },
+  "groups": {
+    "main": {
+      "elements": ["campus_main", "Poortgebouw", "Bouwcampus"],
+      "enabled": true
+    }
+  }
+}
