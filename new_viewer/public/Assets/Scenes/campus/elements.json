@@ -1,17 +1,17 @@
 {
   "logos": [
     {
-      "image": "Assets/Logo/POMLimburg.png",
+      "image": "assets/Logo/POMLimburg.png",
       "link": "https://pomlimburg.be/",
       "alt": "POM Limburg"
     },
     {
-      "image": "Assets/Logo/PXL.png",
+      "image": "assets/Logo/PXL.png",
       "link": "https://www.pxl.be/",
       "alt": "PXL University College"
     },
     {
-      "image": "Assets/Logo/digital_futurlab_con.jpg",
+      "image": "assets/Logo/digital_futurlab_con.jpg",
       "link": "https://www.uhasselt.be/en/instituten-en/digitalfuturelab",
       "alt": "Digital Future Lab"
     }

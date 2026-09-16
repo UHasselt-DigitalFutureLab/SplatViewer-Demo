@@ -17,12 +17,58 @@
     }
   ],
   "camera": {
-    "position": [-3.8, 5.32, -9.03],
-    "lookAt": [-2.19, 4.11, 0.77]
+    "position": [
+      -3.799999952316284,
+      5.320000171661377,
+      -9.029999732971191
+    ],
+    "lookAt": [
+      0,
+      0,
+      0
+    ]
   },
   "flythrough": [],
   "flythroughSpeed": 10,
+  "groups": {},
   "ui": {
-    "logos": { "visibleInModes": ["normal", "advanced", "debug"] }
+    "viewpointSelect": {
+      "visibleInModes": [
+        "normal",
+        "advanced",
+        "debug"
+      ]
+    },
+    "compass": {
+      "visibleInModes": [
+        "advanced",
+        "debug"
+      ]
+    },
+    "mobileMenu": {
+      "visibleInModes": [
+        "normal",
+        "advanced",
+        "debug"
+      ]
+    },
+    "debugPanel": {
+      "visibleInModes": [
+        "debug"
+      ]
+    },
+    "renderSelect": {
+      "visibleInModes": [
+        "advanced",
+        "debug"
+      ]
+    },
+    "logos": {
+      "visibleInModes": [
+        "normal",
+        "advanced",
+        "debug"
+      ]
+    }
   }
 }

@@ -25,5 +25,6 @@
       "lodRangeMin": 0,
       "lodRangeMax": 99
     }
-  ]
+  ],
+  "viewpoints": []
 }

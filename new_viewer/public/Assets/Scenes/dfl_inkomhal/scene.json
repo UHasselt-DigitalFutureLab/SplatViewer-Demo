@@ -14,7 +14,7 @@
   "portals": [
     {
       "name": "brug",
-      "image": "Assets/Icons/door.png",
+      "image": "assets/Icons/door.png",
       "position": [1.31, -4.31, -6.77],
       "scale": [1, 1, 1],
       "targetScene": "brug",

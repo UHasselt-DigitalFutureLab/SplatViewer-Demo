@@ -1,7 +1,7 @@
 import "./style.css";
 
 async function bootstrap() {
-  const sceneModules = import.meta.glob("/public/Assets/Scenes/*/scene.json");
+  const sceneModules = import.meta.glob("/public/assets/Scenes/*/scene.json");
   const folders = Object.keys(sceneModules).map((path) => {
     const parts = path.split("/");
     return parts[parts.length - 2];
@@ -10,7 +10,7 @@ async function bootstrap() {
   const scenes = await Promise.all(
     folders.map(async (folder) => {
       try {
-        const response = await fetch(`Assets/Scenes/${folder}/scene.json`);
+        const response = await fetch(`assets/Scenes/${folder}/scene.json`);
         if (response.ok) {
           const data = await response.json();
           return { folder, name: data.name || folder };
@@ -32,12 +32,12 @@ async function bootstrap() {
     const btn = document.createElement("button");
     btn.className = "scene-button";
     btn.onclick = () => {
-      window.location.href = `/scene.html?scene=${encodeURIComponent(scene.folder)}`;
+      window.location.href = `${import.meta.env.BASE_URL}scene.html?scene=${encodeURIComponent(scene.folder)}`;
     };
 
     const img = document.createElement("img");
     img.className = "scene-image";
-    img.src = `Assets/Scenes/${scene.folder}/preview.png`;
+    img.src = `assets/Scenes/${scene.folder}/preview.png`;
     img.alt = scene.name;
     img.onerror = () => {
       img.src = ""; // Fallback image
