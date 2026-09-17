@@ -1,0 +1,1 @@
+{"version":1,"asset":{"generator":"splat-transform v3.3.0","chunkGaussians":524288,"chunkExtent":16},"count":458065,"counts":[458065],"lodLevels":1,"lodErrors":true,"filenames":["0_0/meta.json"],"tree":{"bound":{"min":[-0.5709087,-0.6331525,-3.533873],"max":[2.223772,0.2955786,-0.865453]},"lods":{"0":{"file":0,"offset":0,"count":458065}},"errors":[0]}}
