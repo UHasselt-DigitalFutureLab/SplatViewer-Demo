@@ -1,0 +1,185 @@
+{
+	"asset":
+	{
+		"version": "2.0",
+		"generator": "Unreal Engine 5.7.4"
+	},
+	"scene": 0,
+	"accessors": [
+		{
+			"bufferView": 0,
+			"count": 6,
+			"type": "SCALAR",
+			"componentType": 5121
+		},
+		{
+			"bufferView": 1,
+			"count": 4,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [
+				-0.5,
+				-8.04061311e-17,
+				-0.5
+			],
+			"max": [
+				0.5,
+				8.04061311e-17,
+				0.5
+			]
+		},
+		{
+			"bufferView": 2,
+			"count": 4,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 3,
+			"count": 4,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 4,
+			"count": 4,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 5,
+			"count": 4,
+			"type": "VEC2",
+			"componentType": 5126
+		}
+	],
+	"buffers": [
+		{
+			"uri": "Water_Plane2.bin",
+			"byteLength": 232
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 6,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 48,
+			"byteOffset": 8,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 48,
+			"byteOffset": 56,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 64,
+			"byteOffset": 104,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 32,
+			"byteOffset": 168,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 32,
+			"byteOffset": 200,
+			"target": 34962
+		}
+	],
+	"images": [
+		{
+			"uri": "M_Water_Lake_Normal.png"
+		}
+	],
+	"materials": [
+		{
+			"name": "M_Water_Lake",
+			"pbrMetallicRoughness":
+			{
+				"baseColorFactor": [
+					0.300543785,
+					0.351532608,
+					0.439657182,
+					1
+				],
+				"roughnessFactor": 0.300000012
+			},
+			"normalTexture":
+			{
+				"index": 0
+			}
+		}
+	],
+	"meshes": [
+		{
+			"name": "Plane",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 0
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"name": "Water_Plane",
+			"translation": [
+				4.79999971,
+				-0.0899999961,
+				-7.0999999
+			],
+			"rotation": [
+				-0,
+				-0.224951059,
+				0,
+				0.974370062
+			],
+			"scale": [
+				6.5,
+				1,
+				13
+			],
+			"mesh": 0
+		}
+	],
+	"samplers": [
+		{
+			"minFilter": 9987,
+			"magFilter": 9729
+		}
+	],
+	"scenes": [
+		{
+			"name": "Leuven_Krakauplein",
+			"nodes": [
+				0
+			]
+		}
+	],
+	"textures": [
+		{
+			"name": "M_Water_Lake_Normal",
+			"sampler": 0,
+			"source": 0
+		}
+	]
+}

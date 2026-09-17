@@ -1,0 +1,165 @@
+{
+	"asset":
+	{
+		"version": "2.0",
+		"generator": "Unreal Engine 5.7.4"
+	},
+	"scene": 0,
+	"accessors": [
+		{
+			"bufferView": 0,
+			"count": 12,
+			"type": "SCALAR",
+			"componentType": 5121
+		},
+		{
+			"bufferView": 1,
+			"count": 8,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [
+				-0.149999991,
+				-0.149999991,
+				-0.129903793
+			],
+			"max": [
+				0.149999991,
+				0.149999991,
+				0.129903793
+			]
+		},
+		{
+			"bufferView": 2,
+			"count": 8,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 3,
+			"count": 8,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 4,
+			"count": 8,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 5,
+			"count": 8,
+			"type": "VEC2",
+			"componentType": 5126
+		}
+	],
+	"buffers": [
+		{
+			"uri": "GrassClump6.bin",
+			"byteLength": 460
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 12,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 96,
+			"byteOffset": 12,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 96,
+			"byteOffset": 108,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 128,
+			"byteOffset": 204,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 64,
+			"byteOffset": 332,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 64,
+			"byteOffset": 396,
+			"target": 34962
+		}
+	],
+	"images": [
+		{
+			"uri": "grass.png"
+		}
+	],
+	"materials": [
+		{
+			"name": "M_Grass",
+			"pbrMetallicRoughness":
+			{
+				"baseColorTexture":
+				{
+					"index": 0
+				},
+				"metallicFactor": 0,
+				"roughnessFactor": 0.5
+			},
+			"alphaMode": "MASK",
+			"alphaCutoff": 0.333299994,
+			"doubleSided": true
+		}
+	],
+	"meshes": [
+		{
+			"name": "GrassClump",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 0
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"mesh": 0
+		}
+	],
+	"samplers": [
+		{
+			"minFilter": 9987,
+			"magFilter": 9729
+		}
+	],
+	"scenes": [
+		{
+			"nodes": [
+				0
+			]
+		}
+	],
+	"textures": [
+		{
+			"name": "grass",
+			"sampler": 0,
+			"source": 0
+		}
+	]
+}

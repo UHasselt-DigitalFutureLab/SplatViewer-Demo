@@ -1,0 +1,212 @@
+{
+  "name": "Leuven Krakauplein",
+  "splats": [
+    {
+      "name": "krakauplein_removed",
+      "path": "splats/krakauplein_removed/lod-meta.json",
+      "position": [0.1, 0.0, -0.1],
+      "rotation": [0.7071067811865476, 0.0, 0.7071067811865476, 0.0],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "krakauplein_old",
+      "path": "splats/krakauplein_old/lod-meta.json",
+      "position": [0.1, 0.0, -0.1],
+      "rotation": [0.7071067811865476, 0.0, 0.7071067811865476, 0.0],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "wide_bench2",
+      "path": "splats/wide_bench2/lod-meta.json",
+      "position": [-14.8, 0.21, -4.1],
+      "rotation": [0.5948227867513411, 0.0, 0.8038568606172172, 0.0],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "picknick_bench1",
+      "path": "splats/picknick_bench1/lod-meta.json",
+      "position": [-30.2, 0.23000000000000004, -16.6],
+      "rotation": [
+        0.993534023504798, -0.000987871863475652, 0.11319890333640054,
+        0.008670440068747006
+      ],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "bench7",
+      "path": "splats/bench7/lod-meta.json",
+      "position": [-13.040000000000001, 0.16, -3.14],
+      "rotation": [0.898794046299167, 0.0, 0.4383711467890774, 0.0],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "picknick_bench2",
+      "path": "splats/picknick_bench1/lod-meta.json",
+      "position": [-27.8, 0.23000000000000004, -13.8],
+      "rotation": [
+        0.993534023504798, -0.000987871863475652, 0.11319890333640054,
+        0.008670440068747006
+      ],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "bench2",
+      "path": "splats/bench7/lod-meta.json",
+      "position": [-6.489103715119864, 0.1, -9.165113630891431],
+      "rotation": [-0.16504760586067768, 0.0, 0.9862856015372315, 0.0],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "bench4",
+      "path": "splats/bench7/lod-meta.json",
+      "position": [-31.657201757181358, 0.1, -21.294070631850264],
+      "rotation": [-0.39073112848927377, 0.0, 0.9205048534524403, 0.0],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "wide_bench1",
+      "path": "splats/wide_bench2/lod-meta.json",
+      "position": [-12.974941901044138, 0.11, -14.780067888087089],
+      "rotation": [-0.6225146366376193, 0.0, 0.7826081568524139, 0.0],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "bench1",
+      "path": "splats/bench7/lod-meta.json",
+      "position": [-0.834728439707415, 0.1, -6.942076522822085],
+      "rotation": [-0.39874906892524614, 0.0, 0.917060074385124, 0.0],
+      "scale": [1.0, 1.0, 1.0000000000000002]
+    },
+    {
+      "name": "bench3",
+      "path": "splats/bench7/lod-meta.json",
+      "position": [-25.985147863137993, 0.1, -19.679039052200164],
+      "rotation": [-0.6156614753256583, 0.0, 0.7880107536067219, 0.0],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "bench5",
+      "path": "splats/bench7/lod-meta.json",
+      "position": [75.86108643122074, 0.3, -40.955846966652665],
+      "rotation": [0.958819734868193, 0.0, 0.2840153447039225, 0.0],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "wide_bench3",
+      "path": "splats/wide_bench2/lod-meta.json",
+      "position": [68.66180147930064, 0.305, -46.96011944214115],
+      "rotation": [0.5591929034707469, 0.0, 0.8290375725550417, 0.0],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "bench6",
+      "path": "splats/bench7/lod-meta.json",
+      "position": [66.71030686676455, 0.2, -39.58855306478268],
+      "rotation": [-0.052335956242943904, 0.0, 0.9986295347545739, 0.0],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "wide_bench4",
+      "path": "splats/wide_bench2/lod-meta.json",
+      "position": [74.49769472071624, 0.31, -41.50424579626903],
+      "rotation": [-0.28401534470392265, 0.0, 0.958819734868193, 0.0],
+      "scale": [1.0, 1.0, 1.0]
+    }
+  ],
+  "models": [
+    {
+      "name": "Krakauplein_Hoofdplein",
+      "path": "models/Krakauplein_Hoofdplein.gltf",
+      "position": [-12.72, -0.02, -12.73],
+      "rotation": [0.0, -0.2164396139381029, 0.0, 0.9762960071199336],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "InstancedFoliageActor_0_-1_-1",
+      "path": "models/InstancedFoliageActor_0_-1_-1.gltf",
+      "position": [-128.0, -128.0, -128.0],
+      "rotation": [0.0, 0.7071067811865476, 0.0, 0.7071067811865476],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "Krakauplein_Parking",
+      "path": "models/Krakauplein_Parking.gltf",
+      "position": [77.89, 0.17, -43.59],
+      "rotation": [
+        0.001300310628255809, -0.6204627894112451, 0.0010287672060796834,
+        0.7842341345454953
+      ],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "InstancedFoliageActor_-1_-1_0",
+      "path": "models/InstancedFoliageActor_-1_-1_0.gltf",
+      "position": [-128.0, 128.0, 128.0],
+      "rotation": [0.0, 0.7071067811865476, 0.0, 0.7071067811865476],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "InstancedFoliageActor_0_-1_0",
+      "path": "models/InstancedFoliageActor_0_-1_0.gltf",
+      "position": [-128.0, 128.0, -128.0],
+      "rotation": [0.0, 0.7071067811865476, 0.0, 0.7071067811865476],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "InstancedFoliageActor_-1_0_0",
+      "path": "models/InstancedFoliageActor_-1_0_0.gltf",
+      "position": [128.0, 128.0, 128.0],
+      "rotation": [0.0, 0.7071067811865476, 0.0, 0.7071067811865476],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "InstancedFoliageActor_0_0_0",
+      "path": "models/InstancedFoliageActor_0_0_0.gltf",
+      "position": [128.0, 128.0, -128.0],
+      "rotation": [0.0, 0.7071067811865476, 0.0, 0.7071067811865476],
+      "scale": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "GrassClump4",
+      "path": "models/GrassClump4.gltf",
+      "position": [96.2, 0.8, -42.800000000000004],
+      "rotation": [0.0, 0.7071067811865476, 0.0, 0.7071067811865476],
+      "scale": [2.805, 2.805, 2.805]
+    },
+    {
+      "name": "GrassClump2",
+      "path": "models/GrassClump2.gltf",
+      "position": [95.60000000000001, 0.8, -42.800000000000004],
+      "rotation": [0.0, 0.7071067811865476, 0.0, 0.7071067811865476],
+      "scale": [2.805, 2.805, 2.805]
+    },
+    {
+      "name": "GrassClump3",
+      "path": "models/GrassClump3.gltf",
+      "position": [95.60000000000001, 0.8, -42.4],
+      "rotation": [0.0, 0.7071067811865476, 0.0, 0.7071067811865476],
+      "scale": [2.805, 2.805, 2.805]
+    },
+    {
+      "name": "GrassClump5",
+      "path": "models/GrassClump5.gltf",
+      "position": [95.8, 0.8, -43.2],
+      "rotation": [0.0, 0.7071067811865476, 0.0, 0.7071067811865476],
+      "scale": [2.805, 2.805, 2.805]
+    },
+    {
+      "name": "GrassClump",
+      "path": "models/GrassClump.gltf",
+      "position": [96.0, 0.8, -42.800000000000004],
+      "rotation": [0.0, 0.7071067811865476, 0.0, 0.7071067811865476],
+      "scale": [2.8049999373033643, 2.8049999373033643, 2.8049999373033643]
+    },
+    {
+      "name": "GrassClump6",
+      "path": "models/GrassClump6.gltf",
+      "position": [96.0, 0.8, -43.2],
+      "rotation": [0.0, 0.7071067811865476, 0.0, 0.7071067811865476],
+      "scale": [2.805, 2.805, 2.805]
+    }
+  ]
+}

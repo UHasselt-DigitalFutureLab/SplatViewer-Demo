@@ -1,0 +1,1619 @@
+{
+	"asset":
+	{
+		"version": "2.0",
+		"generator": "Unreal Engine 5.7.4"
+	},
+	"scene": 0,
+	"accessors": [
+		{
+			"bufferView": 0,
+			"count": 12,
+			"type": "SCALAR",
+			"componentType": 5121
+		},
+		{
+			"bufferView": 1,
+			"count": 8,
+			"type": "VEC3",
+			"componentType": 5126,
+			"min": [
+				-0.149999991,
+				-0.149999991,
+				-0.129903793
+			],
+			"max": [
+				0.149999991,
+				0.149999991,
+				0.129903793
+			]
+		},
+		{
+			"bufferView": 2,
+			"count": 8,
+			"type": "VEC3",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 3,
+			"count": 8,
+			"type": "VEC4",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 4,
+			"count": 8,
+			"type": "VEC2",
+			"componentType": 5126
+		},
+		{
+			"bufferView": 5,
+			"count": 8,
+			"type": "VEC2",
+			"componentType": 5126
+		}
+	],
+	"buffers": [
+		{
+			"uri": "InstancedFoliageActor_0_-1_-1.bin",
+			"byteLength": 460
+		}
+	],
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 12,
+			"target": 34963
+		},
+		{
+			"buffer": 0,
+			"byteLength": 96,
+			"byteOffset": 12,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 96,
+			"byteOffset": 108,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 128,
+			"byteOffset": 204,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 64,
+			"byteOffset": 332,
+			"target": 34962
+		},
+		{
+			"buffer": 0,
+			"byteLength": 64,
+			"byteOffset": 396,
+			"target": 34962
+		}
+	],
+	"images": [
+		{
+			"uri": "grass.png"
+		}
+	],
+	"materials": [
+		{
+			"name": "M_Grass",
+			"pbrMetallicRoughness":
+			{
+				"baseColorTexture":
+				{
+					"index": 0
+				},
+				"metallicFactor": 0,
+				"roughnessFactor": 0.5
+			},
+			"alphaMode": "MASK",
+			"alphaCutoff": 0.333299994,
+			"doubleSided": true
+		}
+	],
+	"meshes": [
+		{
+			"name": "GrassClump",
+			"primitives": [
+				{
+					"attributes":
+					{
+						"POSITION": 1,
+						"NORMAL": 2,
+						"TANGENT": 3,
+						"TEXCOORD_0": 4,
+						"TEXCOORD_1": 5
+					},
+					"indices": 0,
+					"material": 0
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"name": "InstancedFoliageActor_0_-1_-1",
+			"translation": [
+				128,
+				-128,
+				-128
+			],
+			"children": [
+				1
+			]
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0",
+			"children": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91
+			]
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:0",
+			"translation": [
+				-106.896217,
+				127.418594,
+				50.0584908
+			],
+			"rotation": [
+				-9.36405513e-08,
+				-0.992566586,
+				-1.66699916e-08,
+				-0.121702701
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:1",
+			"translation": [
+				-106.336861,
+				127.418594,
+				49.8618431
+			],
+			"rotation": [
+				-8.00342477e-08,
+				-0.96306783,
+				-5.13902805e-08,
+				0.269258976
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:2",
+			"translation": [
+				-106.016327,
+				127.418594,
+				49.390686
+			],
+			"rotation": [
+				6.45549747e-08,
+				0.43301782,
+				-6.98505289e-08,
+				0.901385367
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:3",
+			"translation": [
+				-105.49894,
+				127.418594,
+				48.9414482
+			],
+			"rotation": [
+				2.71654059e-08,
+				-0.00853494834,
+				-9.11508735e-08,
+				0.999963582
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:4",
+			"translation": [
+				-105.494789,
+				127.418594,
+				48.3702202
+			],
+			"rotation": [
+				-9.4988394e-08,
+				-0.939602613,
+				4.86273155e-09,
+				-0.342267275
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:5",
+			"translation": [
+				-104.963737,
+				127.418594,
+				48.4844093
+			],
+			"rotation": [
+				7.11877277e-08,
+				0.520597041,
+				-6.30773442e-08,
+				0.853802621
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:6",
+			"translation": [
+				-104.905869,
+				127.418594,
+				48.4542427
+			],
+			"rotation": [
+				-3.7717502e-08,
+				-0.648751199,
+				-8.73145538e-08,
+				0.761000574
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:7",
+			"translation": [
+				-105.259178,
+				127.418594,
+				47.9700661
+			],
+			"rotation": [
+				-9.51046388e-08,
+				-0.959635973,
+				-1.24491384e-09,
+				-0.281245172
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:8",
+			"translation": [
+				-105.436615,
+				127.418594,
+				47.4295692
+			],
+			"rotation": [
+				2.31290862e-08,
+				-0.0525182858,
+				-9.22577215e-08,
+				0.998619974
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:9",
+			"translation": [
+				-105.096245,
+				127.418594,
+				48.0058975
+			],
+			"rotation": [
+				-9.84655135e-10,
+				-0.303661525,
+				-9.51076871e-08,
+				0.952779949
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:10",
+			"translation": [
+				-104.875542,
+				127.418594,
+				47.1615677
+			],
+			"rotation": [
+				4.79259263e-08,
+				0.227890164,
+				-8.21556299e-08,
+				0.973686874
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:11",
+			"translation": [
+				-105.460236,
+				127.418594,
+				47.5087433
+			],
+			"rotation": [
+				6.694642e-08,
+				0.464120418,
+				-6.75619631e-08,
+				0.885772109
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:12",
+			"translation": [
+				-104.645073,
+				127.418594,
+				47.6681519
+			],
+			"rotation": [
+				-4.46277042e-08,
+				-0.707938194,
+				-8.39929157e-08,
+				0.70627439
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:13",
+			"translation": [
+				-105.175659,
+				127.418594,
+				47.6408195
+			],
+			"rotation": [
+				-8.96792756e-08,
+				-0.999140561,
+				-3.16870867e-08,
+				0.0414528549
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:14",
+			"translation": [
+				-105.789864,
+				127.418594,
+				50.1906052
+			],
+			"rotation": [
+				-4.77443223e-08,
+				-0.733911276,
+				-8.22613018e-08,
+				0.679245353
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:15",
+			"translation": [
+				-101.07132,
+				127.508591,
+				39.0100899
+			],
+			"rotation": [
+				-5.77776182e-09,
+				-0.351304889,
+				-9.49371284e-08,
+				0.936261117
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:16",
+			"translation": [
+				-101.421738,
+				127.508591,
+				39.6467514
+			],
+			"rotation": [
+				-9.41157623e-08,
+				-0.988278508,
+				-1.37355158e-08,
+				-0.152661666
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:17",
+			"translation": [
+				-101.398071,
+				127.508591,
+				40.1945992
+			],
+			"rotation": [
+				-9.46658645e-08,
+				-0.979827702,
+				-9.20970944e-09,
+				-0.199844629
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:18",
+			"translation": [
+				-101.394012,
+				127.508591,
+				40.2703781
+			],
+			"rotation": [
+				-9.51095132e-08,
+				-0.95340389,
+				7.88602628e-10,
+				-0.301696867
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:19",
+			"translation": [
+				-102.015747,
+				127.508591,
+				40.6189613
+			],
+			"rotation": [
+				-8.71380763e-08,
+				-0.993482292,
+				-3.81234528e-08,
+				0.113986783
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:20",
+			"translation": [
+				-102.327438,
+				127.508591,
+				40.5837975
+			],
+			"rotation": [
+				1.76790174e-08,
+				-0.110989951,
+				-9.34553199e-08,
+				0.993821621
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:21",
+			"translation": [
+				-102.429596,
+				127.508591,
+				41.1082382
+			],
+			"rotation": [
+				-4.44830928e-09,
+				-0.338165134,
+				-9.50087227e-08,
+				0.941086888
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:22",
+			"translation": [
+				-102.04792,
+				127.508591,
+				41.5913658
+			],
+			"rotation": [
+				2.41360496e-08,
+				-0.0416005701,
+				-9.19994179e-08,
+				0.999134302
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:23",
+			"translation": [
+				-102.835732,
+				127.508591,
+				41.3368111
+			],
+			"rotation": [
+				-8.62224496e-08,
+				-0.990544081,
+				-4.01513418e-08,
+				0.137195006
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:24",
+			"translation": [
+				-102.512695,
+				127.508591,
+				41.8593254
+			],
+			"rotation": [
+				-9.41703107e-08,
+				-0.987655759,
+				-1.33564173e-08,
+				-0.156640053
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:25",
+			"translation": [
+				-102.266251,
+				127.508591,
+				41.99646
+			],
+			"rotation": [
+				2.42771758e-08,
+				-0.0400676057,
+				-9.1962292e-08,
+				0.999197066
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:26",
+			"translation": [
+				-101.908905,
+				127.508591,
+				41.231102
+			],
+			"rotation": [
+				-1.53617457e-08,
+				-0.444308311,
+				-9.38640383e-08,
+				0.895873964
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:27",
+			"translation": [
+				-101.456398,
+				127.508591,
+				40.8904152
+			],
+			"rotation": [
+				-4.73415191e-08,
+				-0.730581224,
+				-8.249377e-08,
+				0.682825804
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:28",
+			"translation": [
+				-101.223351,
+				127.508591,
+				40.0002174
+			],
+			"rotation": [
+				-6.92377711e-08,
+				-0.897255838,
+				-6.52117507e-08,
+				0.441511035
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:29",
+			"translation": [
+				-100.86129,
+				127.508591,
+				39.3428497
+			],
+			"rotation": [
+				1.55600812e-08,
+				-0.133446559,
+				-9.38313676e-08,
+				0.991056025
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:30",
+			"translation": [
+				-100.472801,
+				127.508591,
+				39.9145393
+			],
+			"rotation": [
+				2.04929975e-08,
+				-0.080929175,
+				-9.28788353e-08,
+				0.996719837
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:31",
+			"translation": [
+				-97.3872604,
+				127.098595,
+				31.4284229
+			],
+			"rotation": [
+				5.10791196e-08,
+				0.265517354,
+				-8.02331925e-08,
+				0.964106083
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:32",
+			"translation": [
+				-96.8551559,
+				127.098595,
+				31.6582241
+			],
+			"rotation": [
+				9.19495662e-08,
+				0.848947406,
+				-2.43252778e-08,
+				0.528477371
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:33",
+			"translation": [
+				-96.9259262,
+				127.098595,
+				31.9822769
+			],
+			"rotation": [
+				-4.64211389e-08,
+				-0.722941995,
+				-8.30151734e-08,
+				0.69090873
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:34",
+			"translation": [
+				-97.6893845,
+				127.098595,
+				32.3220863
+			],
+			"rotation": [
+				6.29512584e-08,
+				0.412425965,
+				-7.12992332e-08,
+				0.910991132
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:35",
+			"translation": [
+				-97.6858749,
+				127.098595,
+				32.5800781
+			],
+			"rotation": [
+				-4.81617164e-08,
+				-0.737353384,
+				-8.20176211e-08,
+				0.675507247
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:36",
+			"translation": [
+				-97.7406693,
+				127.098595,
+				32.5420494
+			],
+			"rotation": [
+				-6.76741863e-08,
+				-0.886549532,
+				-6.68329747e-08,
+				0.462633669
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:37",
+			"translation": [
+				-97.8967285,
+				127.098595,
+				32.9314995
+			],
+			"rotation": [
+				1.35234313e-08,
+				-0.154887974,
+				-9.41464862e-08,
+				0.987932146
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:38",
+			"translation": [
+				-98.0732574,
+				127.098595,
+				33.7457504
+			],
+			"rotation": [
+				3.32085932e-08,
+				0.0584495328,
+				-8.91270489e-08,
+				0.99829036
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:39",
+			"translation": [
+				-98.0803528,
+				127.098595,
+				34.3142662
+			],
+			"rotation": [
+				-2.7338351e-10,
+				-0.296527863,
+				-9.51124051e-08,
+				0.955024302
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:40",
+			"translation": [
+				-98.0411682,
+				127.098595,
+				34.2400475
+			],
+			"rotation": [
+				-9.47369827e-08,
+				-0.926006079,
+				8.44664072e-09,
+				-0.37750861
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:41",
+			"translation": [
+				-98.5748291,
+				127.098595,
+				34.2127533
+			],
+			"rotation": [
+				-9.4042079e-08,
+				-0.901155114,
+				1.42312464e-08,
+				-0.433496833
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:42",
+			"translation": [
+				-94.6431122,
+				126.908592,
+				26.051569
+			],
+			"rotation": [
+				-9.47839851e-08,
+				-0.976975322,
+				-7.90189514e-09,
+				-0.213352874
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:43",
+			"translation": [
+				-93.6720963,
+				126.908592,
+				25.2814236
+			],
+			"rotation": [
+				1.4758859e-08,
+				-0.141898334,
+				-9.39607361e-08,
+				0.989881337
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:44",
+			"translation": [
+				-93.9520187,
+				126.908592,
+				24.8291531
+			],
+			"rotation": [
+				-8.13517858e-08,
+				-0.969784796,
+				-4.92780714e-08,
+				0.24396196
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:45",
+			"translation": [
+				-93.5977554,
+				126.908592,
+				24.4179955
+			],
+			"rotation": [
+				8.06542459e-08,
+				0.654855967,
+				-5.04116429e-08,
+				0.755753696
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:46",
+			"translation": [
+				-92.9032669,
+				126.908592,
+				24.242651
+			],
+			"rotation": [
+				-9.45377323e-08,
+				-0.982350171,
+				-1.04432614e-08,
+				-0.187051773
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:47",
+			"translation": [
+				-92.7902298,
+				126.908592,
+				23.7195225
+			],
+			"rotation": [
+				2.10358273e-08,
+				-0.0750987008,
+				-9.27574035e-08,
+				0.997176111
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:48",
+			"translation": [
+				-92.9376526,
+				126.908592,
+				23.0336227
+			],
+			"rotation": [
+				-6.425946e-08,
+				-0.862392485,
+				-7.01224891e-08,
+				0.506240249
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:49",
+			"translation": [
+				-93.5955658,
+				126.908592,
+				24.6967964
+			],
+			"rotation": [
+				-9.33126145e-08,
+				-0.880894244,
+				1.84173086e-08,
+				-0.473313123
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:50",
+			"translation": [
+				-94.2317963,
+				126.908592,
+				25.2115116
+			],
+			"rotation": [
+				2.52896282e-08,
+				-0.0290484913,
+				-9.16890173e-08,
+				0.999577999
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:51",
+			"translation": [
+				-94.1944504,
+				126.908592,
+				25.6666431
+			],
+			"rotation": [
+				-7.58390897e-08,
+				-0.939472675,
+				-5.7400996e-08,
+				0.34262386
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:52",
+			"translation": [
+				-94.4632568,
+				126.908592,
+				25.8015862
+			],
+			"rotation": [
+				-8.1783277e-08,
+				-0.971898973,
+				-4.855859e-08,
+				0.235398442
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:53",
+			"translation": [
+				-94.5816803,
+				126.908592,
+				25.8579998
+			],
+			"rotation": [
+				-8.27488194e-08,
+				-0.976461887,
+				-4.68942858e-08,
+				0.215690076
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:54",
+			"translation": [
+				-94.6713562,
+				126.908592,
+				26.2794876
+			],
+			"rotation": [
+				1.26382531e-08,
+				-0.164163515,
+				-9.42693816e-08,
+				0.986433148
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:55",
+			"translation": [
+				-93.8360443,
+				126.908592,
+				26.3585396
+			],
+			"rotation": [
+				7.50844293e-08,
+				0.574253023,
+				-5.83846713e-08,
+				0.818677843
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:56",
+			"translation": [
+				-94.3255539,
+				126.908592,
+				25.82374
+			],
+			"rotation": [
+				1.18424488e-08,
+				-0.17248027,
+				-9.43726661e-08,
+				0.985013068
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:57",
+			"translation": [
+				-94.6924133,
+				126.908592,
+				26.6078529
+			],
+			"rotation": [
+				7.92165551e-08,
+				0.633518219,
+				-5.26419903e-08,
+				0.773727775
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:58",
+			"translation": [
+				-94.7656631,
+				126.908592,
+				26.4008751
+			],
+			"rotation": [
+				8.89071714e-08,
+				0.789128482,
+				-3.37928547e-08,
+				0.614228189
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:59",
+			"translation": [
+				-94.2341385,
+				126.908592,
+				26.575058
+			],
+			"rotation": [
+				-3.1682422e-08,
+				-0.595408499,
+				-8.96809098e-08,
+				0.803423166
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:60",
+			"translation": [
+				-89.4448013,
+				126.838593,
+				16.5895538
+			],
+			"rotation": [
+				-6.81864591e-08,
+				-0.980171204,
+				-4.22923172e-08,
+				0.198152632
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:61",
+			"translation": [
+				-89.3285904,
+				126.838593,
+				16.4670429
+			],
+			"rotation": [
+				-8.0236866e-08,
+				-0.936178029,
+				2.80903911e-10,
+				-0.351526201
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:62",
+			"translation": [
+				-89.2616882,
+				126.838593,
+				15.8457956
+			],
+			"rotation": [
+				-9.37933287e-09,
+				-0.455436647,
+				-7.96872683e-08,
+				0.890268207
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:63",
+			"translation": [
+				-89.8983765,
+				126.838593,
+				16.5113106
+			],
+			"rotation": [
+				3.52910696e-08,
+				0.0995480642,
+				-7.2059521e-08,
+				0.995032847
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:64",
+			"translation": [
+				-90.0137558,
+				126.838593,
+				16.0691566
+			],
+			"rotation": [
+				-7.98973616e-08,
+				-0.901405811,
+				7.37869632e-09,
+				-0.432975292
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:65",
+			"translation": [
+				-88.9724426,
+				126.838593,
+				15.5289927
+			],
+			"rotation": [
+				-7.41690087e-08,
+				-0.99936229,
+				-3.06103196e-08,
+				0.0357078537
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:66",
+			"translation": [
+				-88.6736679,
+				126.838593,
+				14.946682
+			],
+			"rotation": [
+				-7.11058803e-08,
+				-0.992068648,
+				-3.71751057e-08,
+				0.125698
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:67",
+			"translation": [
+				-88.2767639,
+				126.838593,
+				14.5960674
+			],
+			"rotation": [
+				-6.43844658e-08,
+				-0.960012853,
+				-4.78818869e-08,
+				0.279956311
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:68",
+			"translation": [
+				-88.522583,
+				126.838593,
+				14.536562
+			],
+			"rotation": [
+				-5.41301688e-08,
+				-0.889457703,
+				-5.92280145e-08,
+				0.457017452
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:69",
+			"translation": [
+				-88.790741,
+				126.838593,
+				13.9849558
+			],
+			"rotation": [
+				7.90645132e-08,
+				0.864375532,
+				-1.36687817e-08,
+				0.502846837
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:70",
+			"translation": [
+				-87.9774857,
+				126.838593,
+				13.5201159
+			],
+			"rotation": [
+				6.4001263e-08,
+				0.537683606,
+				-4.83929021e-08,
+				0.843146801
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:71",
+			"translation": [
+				-88.1799622,
+				126.838593,
+				12.9422045
+			],
+			"rotation": [
+				-2.65897526e-08,
+				-0.639213443,
+				-7.57034897e-08,
+				0.769029379
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:72",
+			"translation": [
+				-87.7379837,
+				126.838593,
+				12.8102303
+			],
+			"rotation": [
+				-4.40078871e-08,
+				-0.805331767,
+				-6.70920173e-08,
+				0.592824399
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:73",
+			"translation": [
+				-87.2451172,
+				126.838593,
+				12.4244976
+			],
+			"rotation": [
+				-1.23669457e-08,
+				-0.488566726,
+				-7.92785713e-08,
+				0.872526526
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:74",
+			"translation": [
+				-87.3673248,
+				126.838593,
+				11.7509851
+			],
+			"rotation": [
+				5.75744927e-08,
+				0.430080235,
+				-5.58856925e-08,
+				0.902790666
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:75",
+			"translation": [
+				-87.1959534,
+				126.838593,
+				11.8904247
+			],
+			"rotation": [
+				-3.9663778e-08,
+				-0.766108632,
+				-6.97482463e-08,
+				0.642711103
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:76",
+			"translation": [
+				-86.9178085,
+				126.838593,
+				11.8346205
+			],
+			"rotation": [
+				1.39830476e-08,
+				-0.179555446,
+				-7.90095456e-08,
+				0.983747959
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:77",
+			"translation": [
+				-86.5856171,
+				126.838593,
+				11.3025532
+			],
+			"rotation": [
+				-7.63345014e-08,
+				-0.999096155,
+				-2.4719963e-08,
+				-0.0425071567
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:78",
+			"translation": [
+				-86.5611801,
+				126.838593,
+				11.2301512
+			],
+			"rotation": [
+				-4.37438139e-08,
+				-0.802995205,
+				-6.72644944e-08,
+				0.595985532
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:79",
+			"translation": [
+				-86.8691788,
+				126.838593,
+				10.7841072
+			],
+			"rotation": [
+				-7.25349381e-08,
+				-0.996299922,
+				-3.43032873e-08,
+				0.0859444961
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:80",
+			"translation": [
+				-86.5955429,
+				126.838593,
+				10.4611683
+			],
+			"rotation": [
+				6.14903115e-08,
+				0.494664013,
+				-5.15458645e-08,
+				0.869084418
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:81",
+			"translation": [
+				-86.3447113,
+				126.838593,
+				10.476965
+			],
+			"rotation": [
+				-7.9851354e-08,
+				-0.967011452,
+				-7.86094123e-09,
+				-0.254732847
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:82",
+			"translation": [
+				-86.0033569,
+				126.838593,
+				10.2460451
+			],
+			"rotation": [
+				-4.85920815e-08,
+				-0.844817996,
+				-6.38501589e-08,
+				0.53505379
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:83",
+			"translation": [
+				-86.765007,
+				126.838593,
+				10.0699434
+			],
+			"rotation": [
+				6.93473581e-08,
+				0.635003209,
+				-4.03605931e-08,
+				0.772509515
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:84",
+			"translation": [
+				-86.8235016,
+				126.838593,
+				10.0546875
+			],
+			"rotation": [
+				4.69666048e-08,
+				0.266352296,
+				-6.50551399e-08,
+				0.963875771
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:85",
+			"translation": [
+				-86.2592545,
+				126.838593,
+				9.55284119
+			],
+			"rotation": [
+				-2.71334244e-08,
+				-0.644726753,
+				-7.55103358e-08,
+				0.764413118
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:86",
+			"translation": [
+				-86.2969437,
+				126.838593,
+				9.95401955
+			],
+			"rotation": [
+				6.49309513e-08,
+				0.55399102,
+				-4.71381405e-08,
+				0.832522631
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:87",
+			"translation": [
+				-86.6748352,
+				126.838593,
+				11.6588564
+			],
+			"rotation": [
+				-7.98924091e-08,
+				-0.965629876,
+				-7.43210338e-09,
+				-0.259921104
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:88",
+			"translation": [
+				-87.7952805,
+				126.838593,
+				13.8650646
+			],
+			"rotation": [
+				2.31523476e-08,
+				-0.0629480481,
+				-7.68244846e-08,
+				0.998016834
+			],
+			"mesh": 0
+		},
+		{
+			"name": "FoliageInstancedStaticMeshComponent_0:89",
+			"translation": [
+				-88.4594803,
+				126.838593,
+				13.9950066
+			],
+			"rotation": [
+				-7.40481099e-08,
+				-0.999214292,
+				-3.09016421e-08,
+				0.0396360233
+			],
+			"mesh": 0
+		}
+	],
+	"samplers": [
+		{
+			"minFilter": 9987,
+			"magFilter": 9729
+		}
+	],
+	"scenes": [
+		{
+			"name": "Leuven_Krakauplein",
+			"nodes": [
+				0
+			]
+		}
+	],
+	"textures": [
+		{
+			"name": "grass",
+			"sampler": 0,
+			"source": 0
+		}
+	]
+}

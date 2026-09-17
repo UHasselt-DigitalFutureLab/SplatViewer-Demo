@@ -1,0 +1,62 @@
+{
+  "logos": [
+    {
+      "image": "assets/Logo/leuven.svg",
+      "link": "https://leuven.be/",
+      "alt": "Stad Leuven"
+    },
+    {
+      "image": "assets/Logo/digital_futurlab_con.jpg",
+      "link": "https://www.uhasselt.be/en/instituten-en/digitalfuturelab",
+      "alt": "Digital Future Lab"
+    }
+  ],
+  "camera": {
+    "position": [-23.47, 2.0, 3.76],
+    "lookAt": [-19.35, 1.5, -5.32]
+  },
+  "ui": {
+    "mobileMenu": { "visibleInModes": ["normal", "advanced", "debug"] },
+    "debugPanel": { "visibleInModes": ["debug"] },
+    "compass": { "visibleInModes": ["advanced", "debug"] },
+    "lodSelect": { "visibleInModes": ["advanced", "debug"] },
+    "renderSelect": { "visibleInModes": ["advanced", "debug"] },
+    "logos": { "visibleInModes": ["normal", "advanced", "debug"] }
+  },
+  "groups": {
+    "old": { "elements": ["krakauplein_old"], "enabled": false },
+    "new": {
+      "elements": [
+        "Krakauplein_Hoofdplein",
+        "Water_Plane",
+        "InstancedFoliageActor_0_-1_-1",
+        "Krakauplein_Parking",
+        "InstancedFoliageActor_-1_-1_0",
+        "InstancedFoliageActor_0_-1_0",
+        "InstancedFoliageActor_-1_0_0",
+        "InstancedFoliageActor_0_0_0",
+        "GrassClump4",
+        "GrassClump2",
+        "GrassClump3",
+        "GrassClump5",
+        "GrassClump",
+        "GrassClump6",
+        "krakauplein_removed",
+        "wide_bench2",
+        "picknick_bench1",
+        "bench7",
+        "picknick_bench2",
+        "bench2",
+        "bench4",
+        "wide_bench1",
+        "bench1",
+        "bench3",
+        "bench5",
+        "wide_bench3",
+        "bench6",
+        "wide_bench4"
+      ],
+      "enabled": true
+    }
+  }
+}
