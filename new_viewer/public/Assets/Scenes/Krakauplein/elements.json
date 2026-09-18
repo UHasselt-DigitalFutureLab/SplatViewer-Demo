@@ -1,12 +1,12 @@
 {
   "logos": [
     {
-      "image": "assets/Logo/leuven.svg",
+      "image": "Assets/Logo/leuven.svg",
       "link": "https://leuven.be/",
       "alt": "Stad Leuven"
     },
     {
-      "image": "assets/Logo/digital_futurlab_con.jpg",
+      "image": "Assets/Logo/digital_futurlab_con.jpg",
       "link": "https://www.uhasselt.be/en/instituten-en/digitalfuturelab",
       "alt": "Digital Future Lab"
     }

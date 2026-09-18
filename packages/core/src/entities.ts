@@ -16,7 +16,7 @@ export async function loadSceneData(
   app: pc.Application,
   sceneName: string,
 ): Promise<[string, SceneData, any]> {
-  const basePath = `assets/Scenes/${sceneName}`;
+  const basePath = `Assets/Scenes/${sceneName}`;
 
   const assets = [
     new pc.Asset("scene-data", "json", {

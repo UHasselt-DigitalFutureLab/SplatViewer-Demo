@@ -19,7 +19,7 @@ function bootstrap() {
 
     const img = document.createElement("img");
     img.className = "scene-image";
-    img.src = `${baseUrl}assets/Scenes/${scene.id}/preview.png`;
+    img.src = `${baseUrl}Assets/Scenes/${scene.id}/preview.png`;
     img.alt = scene.name;
     img.onerror = () => {
       img.style.display = "none";

@@ -14,7 +14,7 @@
   "portals": [
     {
       "name": "Campus",
-      "image": "assets/Icons/Campus.jpg",
+      "image": "Assets/Icons/Campus.jpg",
       "position": [0.24, 2.39, 4.2],
       "scale": [1, 1, 1],
       "targetScene": "campus",
@@ -26,7 +26,7 @@
     },
     {
       "name": "Wandelpad_Zijkant",
-      "image": "assets/Icons/Wandelpad.jpg",
+      "image": "Assets/Icons/Wandelpad.jpg",
       "position": [-25.38, 0.79, -81.3],
       "scale": [1, 1, 1],
       "targetScene": "wandelpad_zijkant",

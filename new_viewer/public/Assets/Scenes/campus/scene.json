@@ -31,13 +31,13 @@
       "position": [-135.96, -54.18, 317.27],
       "targetPosition": [-135.96, -54.18, 317.27],
       "targetLookAt": [-135, -55.86, 307.46],
-      "icon": "assets/Icons/Panorama.png"
+      "icon": "Assets/Icons/Panorama.png"
     }
   ],
   "portals": [
     {
       "name": "Brug",
-      "image": "assets/Icons/door.png",
+      "image": "Assets/Icons/door.png",
       "position": [-189.73, -91.93, 304.67],
       "scale": [5, 5, 5],
       "targetScene": "brug",
@@ -49,7 +49,7 @@
     },
     {
       "name": "Wandelpad",
-      "image": "assets/Icons/Wandelpad.jpg",
+      "image": "Assets/Icons/Wandelpad.jpg",
       "position": [227.71, -93.7, 74.53],
       "scale": [5, 5, 5],
       "targetScene": "wandelpad",
@@ -61,7 +61,7 @@
     },
     {
       "name": "Wandelpad_Zijkant",
-      "image": "assets/Icons/Wandelpad.jpg",
+      "image": "Assets/Icons/Wandelpad.jpg",
       "position": [15.08, -89.57, 119.8],
       "scale": [5, 5, 5],
       "targetScene": "wandelpad_zijkant",

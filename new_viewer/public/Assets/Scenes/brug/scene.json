@@ -14,7 +14,7 @@
   "portals": [
     {
       "name": "campus",
-      "image": "assets/Icons/Campus.jpg",
+      "image": "Assets/Icons/Campus.jpg",
       "position": [22.71, -0.04, -41.26],
       "scale": [1, 1, 1],
       "targetScene": "campus",
@@ -25,7 +25,7 @@
     },
     {
       "name": "inkomhal",
-      "image": "assets/Icons/door.png",
+      "image": "Assets/Icons/door.png",
       "position": [0.25, -0.73, 4.31],
       "scale": [1, 1, 1],
       "targetScene": "dfl_inkomhal",

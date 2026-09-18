@@ -14,7 +14,7 @@
   "portals": [
     {
       "name": "Campus",
-      "image": "assets/Icons/Campus.jpg",
+      "image": "Assets/Icons/Campus.jpg",
       "position": [-35.09, 0.84, 45.21],
       "scale": [1, 1, 1],
       "targetScene": "campus",
@@ -26,7 +26,7 @@
     },
     {
       "name": "Campus_bioville",
-      "image": "assets/Icons/Campus.jpg",
+      "image": "Assets/Icons/Campus.jpg",
       "position": [52.34, 0.76, -49.06],
       "scale": [1, 1, 1],
       "targetScene": "campus",
@@ -38,7 +38,7 @@
     },
     {
       "name": "wandelpad_bioville",
-      "image": "assets/Icons/Wandelpad.jpg",
+      "image": "Assets/Icons/Wandelpad.jpg",
       "position": [-24.79, -0.07, 15.47],
       "scale": [1, 1, 1],
       "targetScene": "wandelpad",
