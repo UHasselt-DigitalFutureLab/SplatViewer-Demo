@@ -1,46 +1,28 @@
 import "./style.css";
+import { SCENES } from "./scenes";
 
-async function bootstrap() {
-  const sceneModules = import.meta.glob("/public/assets/Scenes/*/scene.json");
-  const folders = Object.keys(sceneModules).map((path) => {
-    const parts = path.split("/");
-    return parts[parts.length - 2];
-  });
-
-  const scenes = await Promise.all(
-    folders.map(async (folder) => {
-      try {
-        const response = await fetch(`assets/Scenes/${folder}/scene.json`);
-        if (response.ok) {
-          const data = await response.json();
-          return { folder, name: data.name || folder };
-        }
-      } catch (e) {
-        console.warn("Failed to load scene data for", folder);
-      }
-      return { folder, name: folder };
-    }),
-  );
-
+function bootstrap() {
   const buttonContainer = document.getElementById("scene-buttons");
   if (!buttonContainer) {
     console.error("Scene buttons container not found");
     return;
   }
 
-  scenes.forEach((scene) => {
+  const baseUrl = import.meta.env.BASE_URL;
+
+  SCENES.forEach((scene) => {
     const btn = document.createElement("button");
     btn.className = "scene-button";
     btn.onclick = () => {
-      window.location.href = `${import.meta.env.BASE_URL}scene.html?scene=${encodeURIComponent(scene.folder)}`;
+      window.location.href = `${baseUrl}scene.html?scene=${encodeURIComponent(scene.id)}`;
     };
 
     const img = document.createElement("img");
     img.className = "scene-image";
-    img.src = `assets/Scenes/${scene.folder}/preview.png`;
+    img.src = `${baseUrl}assets/Scenes/${scene.id}/preview.png`;
     img.alt = scene.name;
     img.onerror = () => {
-      img.src = ""; // Fallback image
+      img.style.display = "none";
     };
 
     const label = document.createElement("span");
@@ -53,6 +35,4 @@ async function bootstrap() {
   });
 }
 
-bootstrap().catch((err) => {
-  console.error("Error during scene selection bootstrap:", err);
-});
+bootstrap();
