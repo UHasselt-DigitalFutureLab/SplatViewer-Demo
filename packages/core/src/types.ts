@@ -7,6 +7,25 @@ export interface SceneParams {
   camPos: pc.Vec3;
   camLookAt: pc.Vec3;
   lod: number;
+  targetFps?: number;
+}
+
+export interface SplatBudgetOptions {
+  enabled?: boolean;
+  targetFps?: number;
+  minFps?: number;
+  maxFps?: number;
+  minBudget?: number;
+  maxBudgetDesktop?: number;
+  maxBudgetMobile?: number;
+  initialBudgetDesktop?: number;
+  initialBudgetMobile?: number;
+  updateInterval?: number;
+  budgetStep?: number;
+}
+
+export interface AppOptions {
+  splatBudget?: SplatBudgetOptions;
 }
 
 export type SceneMode = "normal" | "advanced" | "debug";
@@ -61,6 +80,7 @@ export interface ElementsData {
   ui?: Partial<Record<UiElementName, UiElementData>>;
   flythrough?: FlythroughPointData[];
   flythroughSpeed?: number;
+  splatBudget?: SplatBudgetOptions;
 }
 
 export type UiElementName =

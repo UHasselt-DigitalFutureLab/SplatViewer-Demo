@@ -27,6 +27,9 @@ export function getSceneParams(): SceneParams {
     modeParam === "advanced" || modeParam === "debug" ? modeParam : "normal";
   lod = Math.max(0, Math.min(3, isNaN(lod) ? 3 : lod));
 
+  const fpsParam = params.get("fps");
+  const targetFps = fpsParam ? parseInt(fpsParam, 10) : undefined;
+
   return {
     scene: params.get("scene") || "",
     hasCamArgs: params.has("cx"),
@@ -42,6 +45,7 @@ export function getSceneParams(): SceneParams {
     ),
     lod,
     mode,
+    targetFps: targetFps && !isNaN(targetFps) ? targetFps : undefined,
   };
 }
 

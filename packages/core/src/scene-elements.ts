@@ -177,7 +177,11 @@ export function createFloatingText(
   return wrapper;
 }
 
-export function navigateToScene(data: PortalData, lod: number): void {
+export function navigateToScene(
+  data: PortalData,
+  lod: number,
+  baseUrl: string = "",
+): void {
   const params = new URLSearchParams();
   params.set("scene", data.targetScene);
   params.set("cx", data.targetCameraPosition[0].toString());
@@ -187,7 +191,7 @@ export function navigateToScene(data: PortalData, lod: number): void {
   params.set("ly", data.targetCameraLookAt[1].toString());
   params.set("lz", data.targetCameraLookAt[2].toString());
   params.set("lod", lod.toString());
-  window.location.href = `index.html?${params.toString()}`;
+  window.location.href = `${baseUrl}scene.html?${params.toString()}`;
 }
 
 export function setupSceneEnvironment(app: pc.Application) {

@@ -188,11 +188,12 @@ export function createOverlayUI(
   sceneData: SceneData,
   elementsData: ElementsData,
   sceneParams: SceneParams,
+  baseUrl: string = "/",
 ): void {
   const backButton = document.getElementById("back-button");
   if (backButton) {
     backButton.addEventListener("click", () => {
-      window.location.href = "/";
+      window.location.href = baseUrl;
     });
   }
 

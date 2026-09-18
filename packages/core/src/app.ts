@@ -1,6 +1,34 @@
 import * as pc from "playcanvas";
+import type { AppOptions, SplatBudgetOptions } from "./types";
 
-export function createApp(canvas: HTMLCanvasElement): pc.Application {
+export function configureSplatBudget(
+  app: pc.Application,
+  options?: SplatBudgetOptions,
+): void {
+  const current = (app as any)._splatBudgetConfig || {};
+  const targetFps = options?.targetFps ?? current.targetFps ?? 60;
+  const maxFps =
+    options?.maxFps ??
+    current.maxFps ??
+    (options?.targetFps ? Math.max(targetFps - 5, 25) : 55);
+  const minFps =
+    options?.minFps ??
+    current.minFps ??
+    (options?.targetFps ? Math.max(targetFps - 15, 15) : 45);
+
+  (app as any)._splatBudgetConfig = {
+    ...current,
+    ...options,
+    targetFps,
+    maxFps,
+    minFps,
+  };
+}
+
+export function createApp(
+  canvas: HTMLCanvasElement,
+  options?: AppOptions,
+): pc.Application {
   const mouse = new pc.Mouse(document.body);
   const touch = new pc.TouchDevice(document.body);
 
@@ -31,37 +59,58 @@ export function createApp(canvas: HTMLCanvasElement): pc.Application {
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent,
     );
-  let currentSplatBudget = isMobile ? 1000000 : 5000000;
+
+  const budgetOptions = options?.splatBudget;
+  configureSplatBudget(app, budgetOptions);
+
+  const initialBudget = isMobile
+    ? (budgetOptions?.initialBudgetMobile ?? 1_000_000)
+    : (budgetOptions?.initialBudgetDesktop ?? 5_000_000);
+
+  let currentSplatBudget = initialBudget;
   if (app.scene.gsplat) app.scene.gsplat.splatBudget = currentSplatBudget;
 
   let timeSinceLastBudgetUpdate = 0;
   let frameCount = 0;
   let accumulatedDeltaTime = 0;
 
-  const MAX_BUDGET = isMobile ? 5000000 : 10000000;
-  const MIN_BUDGET = 500_000;
-  const BUDGET_STEP = 200_000;
+  const BUDGET_STEP = budgetOptions?.budgetStep ?? 200_000;
   let currentBudgetStep = BUDGET_STEP;
 
   app.on("update", (dt) => {
+    const config = (app as any)._splatBudgetConfig as SplatBudgetOptions & {
+      maxFps: number;
+      minFps: number;
+    };
+
+    if (config?.enabled === false) return;
+
+    const maxBudget = isMobile
+      ? (config?.maxBudgetMobile ?? 5_000_000)
+      : (config?.maxBudgetDesktop ?? 10_000_000);
+    const minBudget = config?.minBudget ?? 500_000;
+    const updateInterval = config?.updateInterval ?? 1.5;
+    const maxFps = config.maxFps;
+    const minFps = config.minFps;
+
     timeSinceLastBudgetUpdate += dt;
     accumulatedDeltaTime += dt;
     frameCount++;
 
-    if (timeSinceLastBudgetUpdate > 1.5) {
+    if (timeSinceLastBudgetUpdate > updateInterval) {
       if (app.scene.gsplat) {
         currentSplatBudget = app.scene.gsplat.splatBudget;
       }
       const averageFps = frameCount / accumulatedDeltaTime;
       let changed = false;
 
-      if (averageFps > 55 && currentSplatBudget < MAX_BUDGET) {
+      if (averageFps > maxFps && currentSplatBudget < maxBudget) {
         currentSplatBudget = currentSplatBudget + currentBudgetStep;
         changed = true;
         currentBudgetStep = Math.min(currentBudgetStep + 100_000, 1_000_000);
-      } else if (averageFps < 45 && currentSplatBudget > MIN_BUDGET) {
+      } else if (averageFps < minFps && currentSplatBudget > minBudget) {
         currentSplatBudget = Math.max(
-          MIN_BUDGET,
+          minBudget,
           currentSplatBudget - currentBudgetStep * 2,
         );
         changed = true;
@@ -73,7 +122,7 @@ export function createApp(canvas: HTMLCanvasElement): pc.Application {
         console.log(
           `Updated splat budget to ${currentSplatBudget} based on average FPS of ${averageFps.toFixed(
             2,
-          )}`,
+          )} (target: >${maxFps} / <${minFps})`,
         );
       }
 

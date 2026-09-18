@@ -4,6 +4,7 @@ import {
   setMobileViewport,
   getSceneParams,
   createApp,
+  configureSplatBudget,
   loadSceneData,
   buildAssetMap,
   loadAssets,
@@ -15,6 +16,7 @@ import {
   createOverlayUI,
   setupSceneEnvironment,
 } from "@splatting/core";
+import { VIEWER_CONFIG } from "./config";
 
 window.pc = pc;
 
@@ -26,18 +28,27 @@ async function bootstrap() {
     console.error(
       "No scene specified in URL parameters. Redirecting to selection page.",
     );
-    window.location.replace("/");
+    window.location.replace(import.meta.env.BASE_URL);
     return;
   }
 
   const canvas = document.createElement("canvas");
   document.body.appendChild(canvas);
-  const app = createApp(canvas);
+
+  const app = createApp(canvas, {
+    splatBudget: {
+      ...VIEWER_CONFIG.splatBudget,
+      ...(sceneParams.targetFps ? { targetFps: sceneParams.targetFps } : {}),
+    },
+  });
 
   const [basePath, sceneData, elementsData] = await loadSceneData(
     app,
     sceneParams.scene,
   );
+  if (elementsData.splatBudget) {
+    configureSplatBudget(app, elementsData.splatBudget);
+  }
   console.log("Loaded scene data:", sceneData, elementsData);
 
   const { assets, splatAssets, modelAssets } = buildAssetMap(
@@ -61,7 +72,14 @@ async function bootstrap() {
   );
   if (debugPanelSupported) createDebugPanel(app, sceneEntities);
 
-  createOverlayUI(app, camera, sceneData, elementsData, sceneParams);
+  createOverlayUI(
+    app,
+    camera,
+    sceneData,
+    elementsData,
+    sceneParams,
+    import.meta.env.BASE_URL,
+  );
   setupSceneEnvironment(app);
 }
 
