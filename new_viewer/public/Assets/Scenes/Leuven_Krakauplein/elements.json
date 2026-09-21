@@ -1,0 +1,89 @@
+{
+  "logos": [
+    {
+      "image": "Assets/Scenes/Leuven_Krakauplein/logos/digital_futurlab_con.jpg",
+      "link": "www.uhasselt.be/dfl",
+      "alt": "Digital Future Lab"
+    },
+    {
+      "image": "Assets/Scenes/Leuven_Krakauplein/logos/leuven.svg",
+      "link": "www.leuven.be",
+      "alt": "Stad Leuven"
+    },
+    {
+      "image": "Assets/Scenes/Leuven_Krakauplein/logos/image002.png",
+      "link": "https://european-union.europa.eu/index_en",
+      "alt": "Co-funded by the European Union"
+    },
+    {
+      "image": "Assets/Scenes/Leuven_Krakauplein/logos/URBREATH_logo.png",
+      "link": "https://urbreath.eu/",
+      "alt": "URBREATH logo"
+    }
+  ],
+  "camera": {
+    "position": [-23.469999313354492, 2, 3.759999990463257],
+    "lookAt": [0, 0, 0]
+  },
+  "flythrough": [],
+  "flythroughSpeed": 2,
+  "groups": {
+    "old": {
+      "elements": ["krakauplein_old"],
+      "enabled": false
+    },
+    "new": {
+      "elements": [
+        "Krakauplein_Hoofdplein",
+        "Water_Plane",
+        "InstancedFoliageActor_0_-1_-1",
+        "Krakauplein_Parking",
+        "InstancedFoliageActor_-1_-1_0",
+        "InstancedFoliageActor_0_-1_0",
+        "InstancedFoliageActor_-1_0_0",
+        "InstancedFoliageActor_0_0_0",
+        "GrassClump4",
+        "GrassClump2",
+        "GrassClump3",
+        "GrassClump5",
+        "GrassClump",
+        "GrassClump6",
+        "krakauplein_removed",
+        "wide_bench2",
+        "picknick_bench1",
+        "bench7",
+        "picknick_bench2",
+        "bench2",
+        "bench4",
+        "wide_bench1",
+        "bench1",
+        "bench3",
+        "bench5",
+        "wide_bench3",
+        "bench6",
+        "wide_bench4"
+      ],
+      "enabled": true
+    }
+  },
+  "ui": {
+    "viewpointSelect": {
+      "visibleInModes": ["normal", "advanced", "debug"]
+    },
+    "compass": {
+      "visibleInModes": ["advanced", "debug"]
+    },
+    "mobileMenu": {
+      "visibleInModes": ["normal", "advanced", "debug"]
+    },
+    "debugPanel": {
+      "visibleInModes": ["debug"]
+    },
+    "renderSelect": {
+      "visibleInModes": ["advanced", "debug"]
+    },
+    "logos": {
+      "visibleInModes": ["normal", "advanced", "debug"]
+    }
+  }
+}

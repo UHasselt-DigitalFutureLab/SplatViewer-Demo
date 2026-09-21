@@ -11,6 +11,5 @@ export const SCENES: SceneConfig[] = [
   { id: "dfl_inkomhal", name: "DFL Inkomhal" },
   { id: "wandelpad", name: "Wandelpad" },
   { id: "wandelpad_zijkant", name: "Wandelpad Zijkant" },
-  { id: "Leuven_Krakauplein", name: "Leuven Krakauplein 2"},
 ];
 

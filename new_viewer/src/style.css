@@ -132,14 +132,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 40px 0;
+    box-sizing: border-box;
     z-index: 1000;
+    overflow-y: auto;
 }
 
 .scene-selection-container h1 {
     font-family: Arial, sans-serif;
     color: #333;
     margin-bottom: 2rem;
+    flex-shrink: 0;
 }
 
 .scene-buttons {
