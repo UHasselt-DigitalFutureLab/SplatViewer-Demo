@@ -1,30 +1,37 @@
 {
   "logos": [
     {
-      "image": "Assets/Logo/leuven.svg",
-      "link": "https://leuven.be/",
+      "image": "Assets/Scenes/Krakauplein/logos/digital_futurlab_con.jpg",
+      "link": "https://www.uhasselt.be/dfl",
+      "alt": "Digital Future Lab"
+    },
+    {
+      "image": "Assets/Scenes/Krakauplein/logos/leuven.svg",
+      "link": "https://www.leuven.be",
       "alt": "Stad Leuven"
     },
     {
-      "image": "Assets/Logo/digital_futurlab_con.jpg",
-      "link": "https://www.uhasselt.be/en/instituten-en/digitalfuturelab",
-      "alt": "Digital Future Lab"
+      "image": "Assets/Scenes/Krakauplein/logos/image002.png",
+      "link": "https://european-union.europa.eu/index_en",
+      "alt": "Co-funded by the European Union"
+    },
+    {
+      "image": "Assets/Scenes/Krakauplein/logos/URBREATH_logo.png",
+      "link": "https://urbreath.eu/",
+      "alt": "URBREATH logo"
     }
   ],
   "camera": {
-    "position": [-23.47, 2.0, 3.76],
-    "lookAt": [-19.35, 1.5, -5.32]
+    "position": [-23.469999313354492, 2, 3.759999990463257],
+    "lookAt": [0, 0, 0]
   },
-  "ui": {
-    "mobileMenu": { "visibleInModes": ["normal", "advanced", "debug"] },
-    "debugPanel": { "visibleInModes": ["debug"] },
-    "compass": { "visibleInModes": ["advanced", "debug"] },
-    "lodSelect": { "visibleInModes": ["advanced", "debug"] },
-    "renderSelect": { "visibleInModes": ["advanced", "debug"] },
-    "logos": { "visibleInModes": ["normal", "advanced", "debug"] }
-  },
+  "flythrough": [],
+  "flythroughSpeed": 2,
   "groups": {
-    "old": { "elements": ["krakauplein_old"], "enabled": false },
+    "old": {
+      "elements": ["krakauplein_old"],
+      "enabled": false
+    },
     "new": {
       "elements": [
         "Krakauplein_Hoofdplein",
@@ -57,6 +64,26 @@
         "wide_bench4"
       ],
       "enabled": true
+    }
+  },
+  "ui": {
+    "viewpointSelect": {
+      "visibleInModes": ["normal", "advanced", "debug"]
+    },
+    "compass": {
+      "visibleInModes": ["advanced", "debug"]
+    },
+    "mobileMenu": {
+      "visibleInModes": ["normal", "advanced", "debug"]
+    },
+    "debugPanel": {
+      "visibleInModes": ["debug"]
+    },
+    "renderSelect": {
+      "visibleInModes": ["advanced", "debug"]
+    },
+    "logos": {
+      "visibleInModes": ["normal", "advanced", "debug"]
     }
   }
 }

@@ -333,8 +333,27 @@ export function createOverlayUI(
     elementsData.logos.forEach((logo) => {
       const logoElement = document.createElement("a");
       logoElement.href = logo.link || "#";
+      let link = logo.link || "#";
+      console.log(link)
+      if (
+        link !== "#" &&
+        !/^https?:\/\//i.test(link) &&
+        !link.startsWith("//") &&
+        !link.startsWith("mailto:")
+      ) {
+        link = `https://${link}`;
+      }
+      logoElement.href = link;
       logoElement.target = "_blank";
       logoElement.innerHTML = `<img src="${logo.image}" alt="${logo.alt}" class="logo-img" />`;
+      logoElement.rel = "noopener noreferrer";
+      const imgSrc =
+        logo.image.startsWith("http://") ||
+        logo.image.startsWith("https://") ||
+        logo.image.startsWith("/")
+          ? logo.image
+          : `${baseUrl}${logo.image}`;
+      logoElement.innerHTML = `<img src="${imgSrc}" alt="${logo.alt}" class="logo-img" />`;
       logoContainer.appendChild(logoElement);
     });
   }
