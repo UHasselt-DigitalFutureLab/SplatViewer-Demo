@@ -55,7 +55,15 @@ export function isUiElementVisible(
   mode: SceneMode,
 ): boolean {
   const visibleInModes = elementsData.ui?.[elementName]?.visibleInModes;
-  return Boolean(visibleInModes?.includes(mode));
+  if (visibleInModes) {
+    return visibleInModes.includes(mode);
+  }
+  
+  if (elementName === "lodModeSelect") {
+    return mode === "advanced" || mode === "debug";
+  }
+
+  return false;
 }
 
 export function toUrlPath(path: string): string {

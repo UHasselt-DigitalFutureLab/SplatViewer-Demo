@@ -221,6 +221,10 @@ export function createOverlayUI(
       isUiElementVisible(elementsData, "renderSelect", mode),
     );
     setUiElementVisible(
+      "lod-mode-select",
+      isUiElementVisible(elementsData, "lodModeSelect", mode),
+    );
+    setUiElementVisible(
       "coordinate-compass",
       isUiElementVisible(elementsData, "compass", mode),
     );
@@ -327,6 +331,45 @@ export function createOverlayUI(
     },
     "Render Mode",
   );
+
+  const lodModeSelectVisible = isUiElementVisible(
+    elementsData,
+    "lodModeSelect",
+    sceneParams.mode,
+  );
+  setUiElementVisible("lod-mode-select", lodModeSelectVisible);
+  const lodModeSelect = bindDropdown(
+    "lod-mode-select",
+    [
+      { text: "Error Based", value: 1 },
+      { text: "Distance Based", value: 0 },
+    ],
+    (val) => {
+      const mode = parseInt(val, 10);
+      const lodModeEnum = mode === 1 ? (pc as any).GSPLAT_LODMODE_ERROR : (pc as any).GSPLAT_LODMODE_DISTANCE;
+      const gsplatEntities = app.root.findComponents("gsplat");
+      gsplatEntities.forEach((gsplat: any) => {
+        if (lodModeEnum !== undefined) {
+          gsplat.lodMode = lodModeEnum;
+        }
+      });
+      const gsplatSettings = (app.scene as any).gsplat;
+      if (gsplatSettings && lodModeEnum !== undefined) {
+        gsplatSettings.lodMode = lodModeEnum;
+      }
+    },
+    "LOD Strategy",
+  );
+
+  if (lodModeSelect) {
+    const gsplatSettings = (app.scene as any).gsplat;
+    if (gsplatSettings && gsplatSettings.lodMode !== undefined) {
+      const modeInt = gsplatSettings.lodMode === (pc as any).GSPLAT_LODMODE_ERROR ? 1 : 0;
+      lodModeSelect.value = String(modeInt);
+    } else {
+      lodModeSelect.value = "1";
+    }
+  }
 
   const logoContainer = document.getElementById("top-right-logo-container");
   if (logoContainer && elementsData.logos) {

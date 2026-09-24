@@ -82,6 +82,9 @@
     "renderSelect": {
       "visibleInModes": ["advanced", "debug"]
     },
+    "lodModeSelect": {
+      "visibleInModes": ["advanced", "debug"]
+    },
     "logos": {
       "visibleInModes": ["normal", "advanced", "debug"]
     }

@@ -88,6 +88,7 @@ export type UiElementName =
   | "compass"
   | "viewpointSelect"
   | "lodSelect"
+  | "lodModeSelect"
   | "renderSelect"
   | "debugPanel"
   | "logos";
